@@ -4,7 +4,7 @@ import TodoActions from './TodoActions';
 const TodoDashboard:React.FC = () => {
     
 
-    const [todoFilter, setTodoFilter] = useState<string>('All');
+    const [todoFilter, setTodoFilter] = useState<'All' | 'Active' | 'Completed'>('All');
 
   return (
     <div className='w-4/5 h-4/5 bg-white rounded-lg shadow-pm flex' >

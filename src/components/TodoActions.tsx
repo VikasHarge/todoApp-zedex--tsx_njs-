@@ -82,7 +82,7 @@ const TodoActions: React.FC<Props> = ({ todoFilter }) => {
       </div>
       <div className='w-full h-3/4 overflow-y-auto' >
         {
-          displayTodos && displayTodos.map((todo, i) => (
+          displayTodos?.map((todo, i) => (
             <TodoList todo={todo} key={todo.id} />
           ))
         }
